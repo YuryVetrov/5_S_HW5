@@ -8,8 +8,8 @@ void Randomizer(int[] Massive) // создаём функцию для запо�
 {
     for (int i = 0; i < Massive.Length; i++)
     {
-       Massive[i] = new Random().Next(-10, 100);
-       System.Console.Write(Massive[i] + " ");
+       Massive[i] = new Random().Next(-10, 100); // заполним массив рандомными числами от -10 до 99
+       System.Console.Write(Massive[i] + " "); // выведи на экран все числа массива
     }
 }
 void View(int[] Massive) // создаём функцию для определения элементов, стоящих на
@@ -31,7 +31,7 @@ void View(int[] Massive) // создаём функцию для определ�
     
 }
 
-int[] Massive = new int[20];
+int[] Massive = new int[20]; // заполняем массив с 20 количеством элементов
 Randomizer(Massive);
 View(Massive);
 
